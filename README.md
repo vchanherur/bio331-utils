@@ -1,7 +1,7 @@
 # bio331-utils
 Utility functions for Reed College Bio331: Computational Systems Biology. 
 
-Vikram's version of the utilities.
+Vikram's version of the utilities, updated.
 
 ## QuickStart
 
