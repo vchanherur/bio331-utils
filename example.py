@@ -10,12 +10,12 @@ n,e,w = readin("test.txt",True)
 print(adj_list(n,e))
 
 # testing node_degree (in,out,both) with s = b
-print(node_degree("b",n,e,"in")
-print(node_degree("b",n,e,"out")
-print(node_degree("b",n,e)
+print(node_degree("b",n,e,"in"))
+print(node_degree("b",n,e,"out"))
+print(node_degree("b",n,e))
 
 # testing bfs
-print(bfs(n,e,"A")
+print(bfs(n,e,"A"))
 
 # testing lcc
 print(lcc(n,e))
