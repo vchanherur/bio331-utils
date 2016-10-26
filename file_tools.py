@@ -25,8 +25,6 @@ def readin(file,directed=False):
 			n.append(nnew[1])
 	
 	# make dict of edges
-	if "weighted" in attr:
-		w = True
 	f.seek(0)
 	for line in f:
 		enew = line.rstrip("\n").split("\t")
@@ -34,8 +32,8 @@ def readin(file,directed=False):
 			pass
 		if enew[:2] in e: # ignore exact repeat
 			pass
-		if tuple(enew[1],enew[0]) in e and w: # ignores direction
-			pass			      # if unweighted
+		if tuple((enew[1],enew[0])) in e and not directed: # ignores direction
+			pass			      # if undirected
 		else:
 			e.append(tuple(enew[:2])) # stores edge
 			w[tuple(enew[:2])] = enew[2] # stores weight

@@ -7,21 +7,21 @@ from graph_tools import *
 n,e,w = readin("test.txt",True)
 
 # testing adj_list:
-print(adj_list(n,e))
+print("adjlist: ",adj_list(n,e))
 
 # testing node_degree (in,out,both) with s = b
-print(node_degree("b",n,e,"in"))
-print(node_degree("b",n,e,"out"))
-print(node_degree("b",n,e))
+print("indegree: ",node_degree("b",n,e,"in"))
+print("outdegree: ",node_degree("b",n,e,"out"))
+print("totaldegree: ",node_degree("b",n,e))
 
 # testing bfs
-print(bfs(n,e,"A"))
+print("bfs: ",bfs(n,e,"a"))
 
 # testing lcc
-print(lcc(n,e))
+print("lcc: ",lcc(n,e))
 
 # testing random node
-print(random_node(n))
+print("random node: ",random_node(n))
 
 # testing random edge
-print(random_edge(e))
+print("random edge: ",random_edge(e))

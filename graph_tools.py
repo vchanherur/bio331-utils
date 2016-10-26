@@ -1,6 +1,7 @@
 # Graph tools
 
 from collections import deque
+import random
 
 def adj_list(n,e):
 	# given a list of nodes and dict of list of edges,
@@ -44,6 +45,7 @@ def bfs(n,e,s):
 	# and a node s, find the distance of each node to s,
 	# return the nodes in the connected component.
 
+	#print("bfs nes:",n,e,s)
 	Q = deque([]) # empty queue
 	visited = []
 
@@ -67,7 +69,7 @@ def lcc(n,e):
 	# find the largest connected component and return its nodes.
 
 	visited = []
-	notV = [i for i in V]
+	notV = [i for i in n]
 
 	largestCCv = [] # nodes in largest cc
 
@@ -77,9 +79,8 @@ def lcc(n,e):
 			notV.remove(i)
 		if len(cc) > len(largestCCv):
 			largestCCv = [i for i in cc]
-	largestCCe = edgesubset(largestCCv,e)
 
-	return largestCCv,largestCCe
+	return largestCCv
 
 	
 def edgesubset(n,e):
@@ -96,7 +97,7 @@ def edgesubset(n,e):
 
 def random_edge(e):
 	# given a list of edges, return a random edge.
-	return random.choice(e.keys())
+	return random.choice(e)
 
 def random_node(n):
 	# given a list of nodes, return a random node.
