@@ -11,4 +11,4 @@ print(node_degree("b",n,e,"in")
 print(node_degree("b",n,e,"out")
 print(node_degree("b",n,e)
 
-# 
+#  
