@@ -9,6 +9,14 @@ These utility functions are used in Bio331, starting with Lab1.  They are wrappe
 
 - `json_utils.py` contains functions to write an annotated graph to a text file in [JSON](http://www.json.org/) format readable by GraphSpace.
 - `graphspace_utils.py` contains [curl commands](https://curl.haxx.se/docs/manpage.html) to post the JSON file to GraphSpace.
+- `file_tools.py` contains a function to read in a graph represented as a tsv: `node1``\t``node2``\t``weight(optional)`, such as `test.txt`.
+- `graph_tools.py` contains several functions to:
+-- compute an adjacency list,
+-- find a node degree,
+-- run a breadth-first search,
+-- find the largest connected component,
+-- choose a random edge, and
+-- choose a random node.
 
 Auto-generated documentation is available on the [Bio331 website](http://www.reed.edu/biology/courses/bio331/) under [Support Code](http://www.reed.edu/biology/courses/bio331/supportcode/index).
 
